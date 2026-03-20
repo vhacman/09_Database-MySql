@@ -15,6 +15,7 @@ Materiale didattico MySQL: DDL, DML, JOIN, integrità referenziale e self join.
 | `Mod01-02-03-04/` | DDL, DML base e query aggregate (tabella PEOPLE) |
 | `Mod05-06/` | JOIN tra tabelle con Foreign Key (PROPRIETARI + AUTO) |
 | `modulo07/` | LEFT JOIN, integrità referenziale, self join |
+| `RIPASSO/` | Ripasso completo: esercizi `sqlex`, database Tropico, teoria SQL |
 
 ---
 
@@ -39,6 +40,21 @@ Materiale didattico MySQL: DDL, DML, JOIN, integrità referenziale e self join.
 | `01_create_auto_tables.sql` | `CREATE TABLE` | Tabelle PROPRIETARI e AUTO con FK e `ON DELETE CASCADE` |
 | `02_insert_sample_data.sql` | `INSERT` | Dati di esempio (8 proprietari, 12 auto) |
 | `03_queries_esercizi.sql` | `SELECT` + `JOIN` | `INNER JOIN`, filtri su targa e città, `GROUP BY` + `COUNT` |
+
+### RIPASSO — Esercizi di Ripasso e Database Tropico
+
+Materiale di consolidamento con due serie di esercizi indipendenti.
+
+| File/Serie | Argomento |
+|------------|-----------|
+| `sqlex00.sql` – `sqlex08.sql` | 9 esercizi progressivi su SELECT, WHERE, JOIN, GROUP BY |
+| `ESERCIZI_completi.sql` | Raccolta completa degli esercizi |
+| `tropicoMonAmout001.sql` – `tropicoMonAmout015.sql` | 15 esercizi sul database Tropico (tema gestionale isola) |
+| `tropico.db` | Database SQLite con dati Tropico per gli esercizi |
+| `concetti_teorici.md` | Teoria SQL: proiezione, colonne calcolate, WHERE, IN, GROUP BY, JOIN, subquery |
+| `ESERCIZI.odt` / `concetti_teorici.docx` | Documenti di riferimento offline |
+
+---
 
 ### modulo07 — LEFT JOIN, Integrità Referenziale, Self Join
 
@@ -124,6 +140,14 @@ SOURCE Mod05-06/03_queries_esercizi.sql;
 SOURCE modulo07/esercizio5.sql;
 SOURCE modulo07/esercizio6.sql;
 SOURCE modulo07/esercizio7.sql;
+
+-- RIPASSO — esercizi sqlex (ogni file è indipendente)
+SOURCE RIPASSO/sqlex00.sql;
+-- ... sqlex01 → sqlex08
+
+-- RIPASSO — esercizi Tropico (ogni file è indipendente, usa tropico.db)
+SOURCE RIPASSO/tropicoMonAmout001.sql;
+-- ... tropicoMonAmout002 → tropicoMonAmout015
 ```
 
 **Strumenti consigliati:** MySQL Workbench, DBeaver, phpMyAdmin, CLI
